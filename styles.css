@@ -1,0 +1,262 @@
+:root {
+	/* Primary Colors */
+	--Pink: hsl(322, 100%, 66%);
+	--Light-Pink: hsl(321, 100%, 78%);
+	--Light-Red: hsl(0, 100%, 63%);
+	/* Neutral Colors */
+	--Very-Dark-Cyan: hsl(192, 100%, 9%);
+	--Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	list-style: none;
+}
+
+/* HEADER */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 3rem 4rem 5rem 4rem;
+}
+
+.header .try-it {
+	padding: .5rem 1.5rem .5rem 1.5rem;
+	background-color: transparent;
+	border: var(--Pink) 1px solid;
+	color: var(--Pink);
+	border-radius: 20px;
+	font-size: 17px;
+}
+
+/* BUILDING THE COMMUNITY */
+.building {
+	text-align: center;
+}
+
+.building h1 {
+	font-family: 'poppins', sans-serif;
+	font-size: 49px;
+	margin: 5rem 0 2rem 0;
+	color: var(--Very-Dark-Cyan);
+}
+
+.building p {
+	font-family: 'open sans', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	font-size: 18px;
+	margin: 0 27rem 2rem 27rem;
+	line-height: 1.5;
+}
+
+.building .get-started,
+.ready-to-build .get-started {
+	font-size: 18px;
+	color: white;
+	background-color: var(--Pink);
+	padding: 1.5rem 5rem;
+	border: none;
+	border-radius: 40px;
+	margin-bottom: 5rem;
+	box-shadow: 0px 5px 9px rgb(200, 200, 200);
+}
+
+.main-image {
+	text-align: center;
+}
+
+/* STATS */
+.stats {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 4rem 19rem;
+}
+.stats h2 {
+	font-family: 'open sans', sans-serif;
+	font-weight: 700;
+	font-size: 85px;
+}
+
+.stats .stats-icon {
+	display: flex;
+	width: 40px;
+	height: 35px;
+	margin-left: .3rem;
+}
+
+.stats p {
+	color: var(--Very-Dark-Cyan);
+	font-family: 'open sans', sans-serif;
+	font-size: 20px;
+	opacity: 50%;
+}
+
+.stats li:first-child {
+	flex-basis: 1;
+}
+
+.stats li:last-child {
+	flex-basis: 1;
+}
+
+/* GROW TOGETHER */
+.bg-top-1 {
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 5rem;
+}
+
+.bg-bottom-1 {
+	width: 100%;
+	vertical-align: middle;
+	margin-bottom: 5rem;
+}
+
+.grow {
+	background-color: var(--Very-Pale-Blue);
+	display: flex;
+}
+
+.grow-image {
+	margin: 2rem 5rem 2rem 0;
+	flex-basis: 1;
+}
+
+.grow-info {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 1;
+	justify-content: center;
+	padding: 0 8rem 0 8rem;
+}
+
+.grow-info h2 {
+	font-family: 'poppins', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.grow-info p {
+	font-family: 'open sans', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	line-height: 1.5;
+	margin-right: 7rem;
+}
+
+/* FLOWING CONVERSATIONS */
+.convos {
+	display: flex;
+}
+
+.convos-image {
+	max-width: 650px;
+	margin: 2rem 0 2rem 5rem;
+	flex-basis: 1;
+}
+
+.convos-info {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 1;
+	justify-content: center;
+	margin: 0 6rem 0 10rem;
+}
+
+.convos-info h2 {
+	font-family: 'poppins', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.convos-info p {
+	font-family: 'open sans', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	line-height: 1.5;
+}
+
+/* YOUR USERS */
+.bg-top-2 {
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 5rem;
+}
+
+.bg-bottom-2 {
+	width: 100%;
+	vertical-align: middle;
+	margin-bottom: 5rem;
+}
+
+.users {
+	background-color: var(--Very-Pale-Blue);
+	display: flex;
+}
+
+.users-image {
+	margin: 2rem 5rem 2rem 0;
+	flex-basis: 1;
+}
+
+.users-info {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 1;
+	justify-content: center;
+	padding: 0 6rem 0 8rem;
+}
+
+.users-info h2 {
+	font-family: 'poppins', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.users-info p {
+	font-family: 'open sans', sans-serif;
+	color: var(--Very-Dark-Cyan);
+	line-height: 1.5;
+	margin-right: 7rem;
+}
+
+/* READY TO BUILD? */
+.ready-to-build {
+	text-align: center;
+}
+
+.ready-to-build h2 {
+	font-family: 'poppins', sans-serif;
+	font-size: 40px;
+	margin: 5rem 0 2rem 0;
+	color: var(--Very-Dark-Cyan);
+}
+
+/* FOOTER */
+.bg-bottom-3 {
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 5rem;
+}
