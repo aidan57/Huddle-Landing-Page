@@ -24,7 +24,7 @@
       <li>
         <img src="/images/logo.svg" alt="">
       </li>
-      <li><button class="try-it">Try It Free</button></li>
+      <li><button class="try-it-btn">Try It Free</button></li>
     </ul>
 
     <!-- BUILDING THE COMMUINITY -->
@@ -34,7 +34,7 @@
         Huddle re-imagines the way we build communities. You have a voice, but so does
         your audience. Create connections with your users as you engage in genuine discussion.
       </p>
-      <button class="get-started">Get Started For Free</button>
+      <button class="get-started-btn">Get Started For Free</button>
     </div>
 
     <div class="main-image">
@@ -106,7 +106,7 @@
     <!-- READY TO BUILD? -->
     <div class="ready-to-build">
       <h2>Ready To Build Your Community?</h2>
-      <button class="get-started">Get Started For Free</button>
+      <button class="get-started-btn">Get Started For Free</button>
     </div>
 
     <!-- FOOTER -->
@@ -123,16 +123,21 @@
           <li> <span><img src="/images/icon-email.svg" alt=""></span> example@huddle.com</li>
         </ul>
         <div class="social-icons">
-          <i class="fab fa-facebook-square fa-2x"></i>
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fab fa-twitter-square fa-2x"></i>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
         </div>
       </div>
       <div class="newsletter">
         <h2>Newsletter</h2>
         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-          send you spam or pass on your email address</p>
-        <button>Subscribe</button>
+          send you spam or pass on your email address
+        </p>
+        <form action="https://www.youtube.com/embed/O91DT1pR1ew">
+          <input class="sub-email" type="email" name="v=O91DT1pR1ew" id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <button class="subscribe-btn">Subscribe</button>
+        </form>
       </div>
     </div>
 
@@ -144,6 +149,54 @@
       Coded by <a href="#">Aidan Velez</a>.
     </p>
   </footer>
+
+  <script>
+    function replaceValidationUI(form) {
+      // Suppress the default bubbles
+      form.addEventListener("invalid", function (event) {
+        event.preventDefault();
+      }, true);
+
+      // Support Safari, iOS Safari, and the Android browser—each of which do not prevent
+      // form submissions by default
+      form.addEventListener("submit", function (event) {
+        if (!this.checkValidity()) {
+          event.preventDefault();
+        }
+      });
+
+      var submitButton = form.querySelector("button:not([type=button]), input[type=submit]");
+      submitButton.addEventListener("click", function (event) {
+        var invalidFields = form.querySelectorAll(":invalid"),
+          errorMessages = form.querySelectorAll(".error-message"),
+          parent;
+
+        // Remove any existing messages
+        for (var i = 0; i < errorMessages.length; i++) {
+          errorMessages[i].parentNode.removeChild(errorMessages[i]);
+        }
+
+        for (var i = 0; i < invalidFields.length; i++) {
+          parent = invalidFields[i].parentNode;
+          parent.insertAdjacentHTML("beforeend", "<div class='error-message'>" +
+            invalidFields[i].validationMessage +
+            "</div>");
+        }
+
+        // If there are errors, give focus to the first invalid field
+        if (invalidFields.length > 0) {
+          invalidFields[0].focus();
+        }
+      });
+    }
+
+    // Replace the validation UI for all forms
+    var forms = document.querySelectorAll("form");
+    for (var i = 0; i < forms.length; i++) {
+      replaceValidationUI(forms[i]);
+    }
+  </script>
+
 </body>
 
 </html>
