@@ -14,6 +14,7 @@
 	color: white;
 	background-color: var(--Very-Dark-Cyan);
 	padding-bottom: .5rem;
+	vertical-align: middle;
 }
 
 .attribution a {
