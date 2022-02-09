@@ -581,6 +581,10 @@ input:invalid:focus {
 
 @media (max-width: 768px) {
 	/* HEADER */
+	.header {
+		margin: 3rem 2rem 7rem 2rem;
+	}
+
 	.header-logo {
 		max-width: 30vw;
 	}
