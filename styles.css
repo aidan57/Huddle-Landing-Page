@@ -812,7 +812,7 @@ input:invalid:focus {
 		justify-content: left;
 		font-size: 14px;
 		margin: 0 1rem 0rem 0;
-		padding-left: 0;
+		padding-left: .5rem;
 		width: 50%;
 	}
 
